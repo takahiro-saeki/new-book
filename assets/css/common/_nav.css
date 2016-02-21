@@ -1,0 +1,11 @@
+.header {
+  background: #fff;
+  padding: 1rem 0;
+}
+
+.rogo {
+  margin: 0;
+  @mixin max $phone {
+    margin: 0 auto;
+  }
+}

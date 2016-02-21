@@ -12,7 +12,8 @@ gulp.task('css', () => {
     require('postcss-simple-vars'),
     require('postcss-size'),
     require('postcss-media-minmax'),
-    require('postcss-color-function')
+    require('postcss-color-function'),
+    require('postcss-custom-media')
   ];
 
   return gulp.src(paths.css)

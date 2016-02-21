@@ -1,0 +1,30 @@
+.shadow {
+  box-shadow: 0 1px 6px rgba(0,0,0,.35);
+  max-width: 400px;
+  display: inline-block;
+}
+
+.first {
+  padding: 5rem 0;
+  background: #fce4ec;
+}
+
+.list {
+  padding: 1rem 0;
+  &:after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+  span {
+    display: inline-block;
+  }
+}
+
+.left-box {
+  width: 29%;
+}
+
+.right-box {
+  width: 70%;
+}

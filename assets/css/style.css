@@ -1,4 +1,7 @@
 @import 'common/flexboxgrid';
+@import 'common/var';
 @import 'common/base';
 @import 'common/material-icons';
 @import 'common/nav';
+@import 'common/main';
+@import 'common/footer';

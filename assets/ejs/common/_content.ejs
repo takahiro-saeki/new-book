@@ -1,36 +1,32 @@
 <main>
-  <section class="container-fluid first">
+  <% for(var i = 0; i < book.length; i++) { %>
+  <section class="container-fluid <%= book[i].class %>">
     <div class="row">
-      <div class="col-xs-12 col-md-6 center"><img src="img/image1.png" class="image shadow"></div>
+      <div class="col-xs-12 col-md-6 center"><img src="img/<%= book[i].imgPath %>.png" class="image shadow"></div>
       <div class="col-xs-12 col-md-6">
-        <p>アナタに捧げるフロントエンド実践マニュアル</p>
+        <h1 class="title"><%= book[i].title %></h1>
         <p class="list">
           <span class="left-box">概要</span>
-          <span class="right-box">PostCSSとは何かということや導入の仕方、次世代CSSの構文の説明を中心に執筆させて頂きました。 この書籍を通じて少しでもPostCSSに興味を持って頂けたら幸いです。</span>
+          <span class="right-box"><%= book[i].desc %></span>
         </p>
         <p class="list">
           <span class="left-box">サークル名</span>
-          <span class="right-box">もふもふ☆パラダイス</span>
+          <span class="right-box"><%= book[i].name %></span>
         </p>
         <p class="list">
           <span class="left-box">配布場所</span>
-          <span class="right-box">コミックマーケットC89 東エ-35b</span>
+          <span class="right-box"><%= book[i].place %></span>
         </p>
         <p class="list">
           <span class="left-box">配布日程</span>
-          <span class="right-box">2015年12月31日(木)</span>
+          <span class="right-box"><%= book[i].date %></span>
         </p>
         <p class="list">
           <span class="left-box">価格</span>
-          <span class="right-box">500円(税込み)</span>
+          <span class="right-box"><%= book[i].price %>円(税込み)</span>
         </p>
       </div>
     </div>
   </section>
-  <section class="container-fluid">
-    <div class="row">
-      <div class="col-xs-3 col-sm-4 col-md-6 col-lg-12">テスト1</div>
-      <div class="col-xs-3 col-sm-4 col-md-6 col-lg-12">テスト2</div>
-    </div>
-  </section>
+  <% } %>
 </main>

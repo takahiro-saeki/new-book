@@ -1,6 +1,7 @@
 .footer {
   background: #ec407a;
   padding: 3rem 0;
+  color: #fff;
 }
 
 .copyright {
@@ -8,4 +9,68 @@
   color: #fff;
   text-align: center;
   padding: 1rem 0;
+}
+
+.footer-list {
+  h2 {
+    font-size: 2rem;
+    border-left: 0.3rem solid #fff;
+    padding: 0 0 0 1rem;
+    margin: 2rem 0;
+  }
+  &:after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+  span {
+    display: inline-block;
+  }
+}
+
+.footer-left {
+  width: 50%;
+  @mixin max $phone {
+    width: 100%;
+    display: inline-block;
+  }
+}
+
+.footer-right {
+  width: 49%;
+  justify-content: center;
+  text-align: center;
+  @mixin max $phone {
+    width: 100%;
+    display: inline-block;
+  }
+}
+
+.mp-button {
+  width: 80%;
+  appearance:none;
+  background: #fce4ec;
+  border-radius: 5px;
+  border: 1px solid #ec407a;
+  padding: 2rem;
+  color: #ec407a;
+  font-size: 1.6rem;
+  &:hover {
+    background-color: #f8bbd0;
+  }
+  &:active {
+    background: #f06292;
+  }
+  &:focus
+  {
+	  outline: 0;
+  }
+  @media min $phone {
+    margin-top: 1rem;
+  }
+}
+
+.flex-footer {
+  display: flex;
+  align-items: center;
 }

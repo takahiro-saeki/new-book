@@ -7,6 +7,8 @@ const path = {
   css: './assets/css/*.css',
   cssFull: './assets/css/**/*.css',
   cssFullDir: './assets/css/common/**/*.css',
+  img: 'assets/img/*.png',
+  tempImg: 'template/img',
   tempJs: 'template/js',
   tempCss: './template/css',
   tempEjs: './template'

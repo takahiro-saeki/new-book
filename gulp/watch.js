@@ -1,6 +1,6 @@
 import gulp from 'gulp';
 import webserver from 'gulp-webserver';
-import paths from './path';
+import PATHS from './path';
 
 gulp.task('webserver', () => {
   gulp.src('template')
@@ -12,8 +12,8 @@ gulp.task('webserver', () => {
 });
 
 gulp.task('watch', () => {
-  gulp.watch(paths.ejsFull, ['ejs']);
-  gulp.watch(paths.jsFull, ['js']);
-  gulp.watch(paths.cssFull, ['css']);
-  gulp.watch(paths.cssFullDir, ['css']);
+  gulp.watch(PATHS.EJS_FULL, ['ejs']);
+  gulp.watch(PATHS.JS_FULL, ['js']);
+  gulp.watch(PATHS.CSS_FULL, ['css']);
+  gulp.watch(PATHS.CSS_FULL_DIR, ['css']);
 });

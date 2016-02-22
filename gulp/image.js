@@ -1,9 +1,9 @@
 import gulp from 'gulp';
 import imageminPngquant from 'imagemin-pngquant';
-import paths from './path';
+import PATHS from './path';
 
 gulp.task('img', () => {
-  return gulp.src(paths.img)
+  return gulp.src(PATHS.IMG)
     .pipe(imageminPngquant({quality: '65-80', speed: 4})())
-    .pipe(gulp.dest(paths.tempImg));
+    .pipe(gulp.dest(PATHS.TEMP_IMG));
 });

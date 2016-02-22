@@ -1,6 +1,6 @@
 import gulp from 'gulp';
 import postcss from 'gulp-postcss';
-import paths from './path';
+import PATHS from './path';
 
 gulp.task('css', () => {
   let processors = [
@@ -16,7 +16,7 @@ gulp.task('css', () => {
     require('postcss-custom-media')
   ];
 
-  return gulp.src(paths.css)
+  return gulp.src(PATHS.CSS)
   .pipe(postcss(processors))
-  .pipe(gulp.dest(paths.tempCss))
+  .pipe(gulp.dest(PATHS.TEMP_CSS))
 });

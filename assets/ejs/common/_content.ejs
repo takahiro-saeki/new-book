@@ -2,8 +2,8 @@
   <% for(var i = 0; i < book.length; i++) { %>
   <section class="container-fluid <%= book[i].class %>">
     <div class="row">
-      <div class="col-xs-12 col-md-6 center"><img src="img/<%= book[i].imgPath %>.png" class="image shadow"></div>
-      <div class="col-xs-12 col-md-6">
+      <div class="col-xs-12 col-md-6 center"><img src="img/<%= book[i].imgPath %>" class="image shadow"></div>
+      <div class="col-xs-12 col-md-6 sp-padding">
         <h1 class="title"><%= book[i].title %></h1>
         <p class="list">
           <span class="left-box">概要</span>

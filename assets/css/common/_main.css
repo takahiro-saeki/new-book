@@ -8,13 +8,18 @@
 }
 
 .first {
+  padding: 5rem 0 5rem;
+  background: #e3f2fd;
+}
+
+.second {
   padding: 5rem 0 8rem;
   background: #fce4ec;
 }
 
-.second {
-  @extend .first;
-  background: #e3f2fd;
+.third {
+  padding: 5rem 0 8rem;
+  background: #fbe9e7;
 }
 
 .title {
@@ -24,6 +29,8 @@
 
 .list {
   padding: 1rem 0;
+  display: flex;
+  align-items: center;
   &:after {
     content: "";
     display: block;
@@ -36,8 +43,23 @@
 
 .left-box {
   width: 19%;
+  @mixin max $phone {
+    width: 24%;
+  }
 }
 
 .right-box {
-  width: 80%;
+  width: 70%;
+  padding: 0 10% 0 0;
+  @mixin max $phone {
+    width: 75%;
+    padding: 0;
+  }
+}
+
+.sp-padding {
+  padding: 0;
+  @mixin max $phone {
+    padding: 5%;
+  }
 }

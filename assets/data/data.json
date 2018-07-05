@@ -1,6 +1,16 @@
 {
   "book": [
     {
+      "class": "fifth",
+      "imgPath": "mohupara-5.png",
+      "title": "アタシだけを見て♡Micro Frontends 実践マニュアル",
+      "desc": "どういう環境でweb componentsを使用すると効果があるのか、またweb componentsがどう将来を変革して行くのかという内容に加え、Micro Frontendsが解決する問題について詳細に説明しています。",
+      "name": "もふもふ☆パラダイス",
+      "place": "コミックマーケット94 1日目(金) 西め34a",
+      "date": "2018年8月10日(金)",
+      "price": "500"
+    },
+    {
       "class": "fourth",
       "imgPath": "mohupara-4.jpg",
       "title": "さぁ、一緒に行こう♡ Web Components 実践マニュアル",

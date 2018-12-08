@@ -1,6 +1,16 @@
 {
   "book": [
     {
+      "class": "sixth",
+      "imgPath": "mohupara-6.png",
+      "title": "これから始める ♡React.js 実践マニュアル",
+      "desc": "どういう環境でweb componentsを使用すると効果があるのか、またweb componentsがどう将来を変革して行くのかという内容に加え、Micro Frontendsが解決する問題について詳細に説明しています。",
+      "name": "もふもふ☆パラダイス",
+      "place": "コミックマーケット95 2日目(日) 東ト38b",
+      "date": "2018年12月30日(日)",
+      "price": "500"
+    },
+    {
       "class": "fifth",
       "imgPath": "mohupara-5.png",
       "title": "アタシだけを見て♡Micro Frontends 実践マニュアル",
